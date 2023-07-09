@@ -1,4 +1,4 @@
-[submodule "nodes/realsense-ros"]
-	path = nodes/realsense-ros
-	url = git@github.com:Rooholla-KhorramBakht/realsense-ros.git
+[submodule "nodes/--force"]
+	path = nodes/--force
+	url = https://github.com/Rooholla-KhorramBakht/realsense-ros.git
 	branch = ros1-legacy
