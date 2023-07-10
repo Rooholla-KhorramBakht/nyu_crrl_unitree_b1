@@ -12,3 +12,7 @@
 	path = nodes/vision_opencv
 	url = https://github.com/ros-perception/vision_opencv.git
 	branch = noetic
+[submodule "nodes/realsense-ros"]
+	path = nodes/realsense-ros
+	url = https://github.com/Rooholla-KhorramBakht/realsense-ros.git
+	branch = ros1-legacy
