@@ -19,7 +19,7 @@ else()
   set(ARCH arm64)
 endif()
 
-link_directories(unitree_legged_sdk/lib/cpp/${ARCH})
+link_directories(lib/cpp/${ARCH})
 
 set(EXTRA_LIBS -pthread libunitree_legged_sdk.so)
 
@@ -28,10 +28,9 @@ set(CMAKE_CXX_FLAGS "-O3 -fPIC")
 include_directories(
     include
     ${catkin_INCLUDE_DIRS}
-    unitree_legged_sdk/include
 )
 
-add_executable(unitree_interface_hl src/exe/unitree_interface_hl.cpp)
+add_executable(unitree_interface_hl src/unitree_interface_hl.cpp)
 target_link_libraries(unitree_interface_hl ${EXTRA_LIBS} ${catkin_LIBRARIES})
 add_dependencies(unitree_interface_hl ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
