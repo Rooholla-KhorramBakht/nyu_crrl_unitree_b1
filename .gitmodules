@@ -12,3 +12,7 @@
 [submodule "nodes/zed-ros-wrapper"]
 	path = nodes/zed-ros-wrapper
 	url = https://github.com/stereolabs/zed-ros-wrapper.git
+[submodule "nodes/vision_opencv"]
+	path = nodes/vision_opencv
+	url = https://github.com/ros-perception/vision_opencv.git
+	branch = noetic
