@@ -6,3 +6,9 @@
 	path = nodes/realsense-ros
 	url = https://github.com/Rooholla-KhorramBakht/realsense-ros.git
 	branch = ros1-legacy
+[submodule "nodes/kiss-icp"]
+	path = nodes/kiss-icp
+	url = https://github.com/Rooholla-KhorramBakht/kiss-icp.git
+[submodule "nodes/zed-ros-wrapper"]
+	path = nodes/zed-ros-wrapper
+	url = https://github.com/stereolabs/zed-ros-wrapper.git
