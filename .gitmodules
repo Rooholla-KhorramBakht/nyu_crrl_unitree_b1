@@ -16,3 +16,6 @@
 	path = nodes/realsense-ros
 	url = https://github.com/Rooholla-KhorramBakht/realsense-ros.git
 	branch = ros1-legacy
+[submodule "nodes/vicon_bridge"]
+	path = nodes/vicon_bridge
+	url = https://github.com/ethz-asl/vicon_bridge.git

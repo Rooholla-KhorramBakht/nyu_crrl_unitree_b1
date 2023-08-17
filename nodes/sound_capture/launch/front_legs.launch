@@ -1,0 +1,7 @@
+<launch>
+  <node name="front_legs_audio_capture_node" pkg="sound_capture" type="capture.py" output="screen">
+    <param name="input_device" value="default" />
+    <remap from="audio_ch1" to="audio/front_right_leg" />
+    <remap from="audio_ch2" to="audio/front_left_leg" />
+  </node>
+</launch>

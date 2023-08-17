@@ -1,0 +1,13 @@
+topics:
+  -
+    topic: /foot_gravity_front_left  # Topic name on both ROS 1 and ROS 2
+    type: geometry_msgs/msg/Vector3Stamped  # Type of topic to bridge
+    queue_size: 1  # Queue size
+  -
+    topic: /foot_linear_acceleration_front_left  # Topic name on both ROS 1 and ROS 2
+    type: geometry_msgs/msg/Vector3Stamped  # Type of topic to bridge
+    queue_size: 1  # Queue size
+  -
+    topic: /foot_imu_front_left  # Topic name on both ROS 1 and ROS 2
+    type: sensor_msgs/msg/Imu  # Type of topic to bridge
+    queue_size: 1  # Queue size
