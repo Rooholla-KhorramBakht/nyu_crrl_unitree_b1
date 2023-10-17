@@ -17,9 +17,9 @@ Then run:
   systemctl restart chrony.service
 ```
 
-This enables the use of unitree machine as an NTP server for jetsons.
+This enables the use of the orin machine as an NTP server for the other computers on the robot.
 
-On each jetson, modify `/etc/chrony/chrony.conf`, comment out all pool links, then
+On each computer on the robot, similarly install the chrony and disable the default NTP services and then modify `/etc/chrony/chrony.conf` and comment out all pool links, then
 add (again, right after pools):
 ```
 server 192.168.123.1 minpoll -1 maxpoll -1
