@@ -6,7 +6,7 @@ chrony is used to perform synchronization. It conflicts with `systemd-timesyncd`
   sudo apt install chrony
 ```
 
-On unitree, modify `/etc/chrony/chrony.conf` to add (right after all pools):
+On the orin (used as our local time server on the dog), modify `/etc/chrony/chrony.conf` to add (right after all pools):
 ```
 local stratum 10
 allow 192.168.123.0/24
