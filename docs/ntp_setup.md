@@ -1,9 +1,6 @@
 # Time synchronization between machines
 
-It appears that the jetsons on board do not have some power storage device to keep their
-RTC alive when the robot is powered down. As such, the computers have different / wrong
-times that needs to be fixed every boot. chrony is used to perform synchronization. It
-conflicts with =systemd-timesyncd= service. On all computers, run:
+chrony is used to perform synchronization. It conflicts with `systemd-timesyncd` service. On all computers, run:
 ```bash
   systemctl disable --now systemd-timesyncd.service
   sudo apt install chrony
