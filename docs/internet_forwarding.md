@@ -21,6 +21,12 @@ sudo apt-get install iptables-persistent
 ```
 During the installation, you'll be asked if you want to save the current IPv4 rules. Choose "Yes" to save the rules.
 
+**Note:** Later in case the IP table should be updated, do as follows:
+```bash
+iptables-save > /etc/iptables/rules.v4
+ip6tables-save > /etc/iptables/rules.v6
+```
+
 4. On the other computer, set the default gateway to 192.168.1.10. Open a terminal and run the following command:
 ```
 sudo ip route add default via 192.168.123.1
